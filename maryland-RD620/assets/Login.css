@@ -1,0 +1,978 @@
+﻿* {
+    padding:0px;
+    margin:0px;
+}
+
+#login-box
+{
+    width: 333px;
+    height: 352px;
+    padding: 58px 76px 0 76px;
+    color: #ebebeb;
+    font-family: 'Open Sans','Segoe UI Symbol',Helvetica;
+    background: url('../Image/login-box-backg.html') no-repeat left top;
+}
+
+#login-box img { 
+	border:none;
+}
+
+#login-box h2 {
+	padding:0;
+	margin:0;
+	color: #ebebeb;
+	font: bold 44px "Calibri", Arial;
+}
+
+
+.login-box-name {
+	float: left;
+	display:inline;
+	width:110px;
+	text-align: right;
+	margin:0 0 7px 0;
+    font-weight:bold;
+    padding-right: 10px;
+    color:#333333;
+    font-family:'Segoe UI';
+    font-size:18px;
+}
+
+#login-box-field {
+	float: left;
+	display:inline;
+	width:230px;
+	margin:0;
+	margin:0 0 7px 0;
+}
+
+
+.form-login  {
+	width: 205px;
+	padding: 10px 4px 6px 3px;
+	border: 1px solid #0d2c52;
+	background-color:#1e4f8a;
+	font-size: 16px;
+	color: #ebebeb;
+}
+
+
+#UserName, #Password, #ClaimantID, #ClaimantSSN, #ActivationPIN,#istrSSN,#istrActivationPIN {
+	padding: 7px;   
+     border:1px solid #a0a0a0;
+    width:90%;
+    height:35px;
+    /*Applying CSS3 gradient*/
+    background: -moz-linear-gradient(center top , #FFFFFF,  #eeead7 1px, #FFFFFF 20px);    
+    background: -webkit-gradient(linear, left top, left 20, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeead7', endColorstr='#FFFFFF');
+    font-family:'Lucida Sans Unicode','Lucida Grande',arial,helvetica,sans-serif;
+    font-size:14px;
+    color:#555555;
+    box-sizing:border-box;   
+}
+#UserName:hover, #Password:hover
+{
+    border:1px solid #f7cd83;
+}
+#UserName:focus, #Password:focus
+{
+    box-shadow:0 0 2px #ffba00;
+}
+
+.login-box-options  {
+	clear:both;
+	padding-left:125px;
+	font-size: 15px;
+    color:#333333;
+    display:block;
+}
+
+.login-box-options a {
+	color: #ebebeb;
+	font-size: 11px;
+
+}
+
+
+.btnLogin{
+    font-family:'Segoe UI';
+    font-size:18px;
+    font-style:normal;
+    font-weight:bold;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    padding:3px  25px 7px 25px;
+    cursor:pointer;
+    margin-left:45%;
+    color: #FFFFFF;
+    border:0;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    background:#184d67;
+
+
+}
+   input[type="submit"], input[type="submit"]:hover {
+    -webkit-appearance: none !important;
+   }
+
+
+.btnLogin:active{
+cursor:pointer;
+position:relative;
+top:2px;
+}
+
+.btnLogin:hover{
+background: #307da0;
+
+
+}
+
+.btnLogin:focus
+{
+    outline:0;
+}
+
+/*..........................*/
+h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Open Sans','Segoe UI Symbol',Helvetica;
+    padding: 5px 3px 0px 4px;
+    text-shadow: rgba(0,0,0,.9) 0 1px 0;
+}
+
+.LoginBg {
+    background:#00496b;
+    overflow:hidden;
+}
+*::-moz-selection {
+    background: none repeat scroll 0 0 #F69034;
+    color: #FFFEFF;
+    text-shadow: none;
+}
+.logheader {
+    background-color:#193658;
+    width:100%;
+    height:60px;
+
+    
+}
+.loginband {
+    background:#3c8bb0;
+    font-family: 'Open Sans','Segoe UI Symbol',Helvetica;
+    margin-top: 150px;
+    color:black;
+    padding: 0;
+    width:100%;
+    height:370px;
+    border-top:5px solid #443d50;
+    border-bottom:5px solid #443d50;
+}
+
+.logbox {
+     display: block;
+    margin: 0 auto;
+    position: relative;
+    width:990px;
+}
+
+.logbox .divizlogo {
+    width: 400px;
+    position: relative;
+    height:250px;
+    float: left;
+    margin-top:70px;
+    background: url("../Images/login-logo-internal.html") no-repeat 20px 10px;
+	padding-right:100px;
+	border-right:5px solid #222222;
+}
+
+.logbox .logscreen {
+   
+    position:relative;
+    margin-top:95px;
+    margin-left:50px;
+    float:left;
+    
+}
+.logerror {
+    font-size: 12px;
+    font-family: verdana;
+    color: #db161b;
+    float: left;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.capslockerror {
+    font-size: 12px;
+    font-family: verdana;
+    color: #333333;
+    width: 65%;
+    float: right;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+     box-sizing: border-box;
+    text-align: justify;
+
+}
+
+
+.logerror span {
+    margin-left: 40%;
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+.footer {
+    bottom:0px;
+    height:100%;
+    margin:0 auto;
+    display:block;
+    float:left;
+    width:100%;
+    font-family:'Lucida Sans Unicode','Lucida Grande',arial,helvetica,sans-serif;
+    font-size:14px;
+    color:#333;
+}
+
+.loginwrapper
+{
+    width: 100%;
+    height: 390px;
+    background:#3c8bb0;
+    margin-top:150px;
+    border-top:5px solid #222222;
+    border-bottom:5px solid #222222;
+}
+
+.loginmain
+{
+    width: 1040px;
+    height: 300px;
+    margin: 0px auto;
+    
+}
+
+.login-logo
+{
+    width:380px;
+    height:250px;
+    float:left;
+    margin-top:70px;
+    padding-right:115px;
+    border-right:5px solid #443d50;
+
+}
+
+.login-table
+{
+    margin-top:85px;
+    float:left;
+    width:540px;
+    height:auto;
+}
+
+
+.login-textbox
+{
+    width: 290px !important;
+    height:35px;
+    border: 1px solid #222222;
+}
+
+.loginrow
+{
+    width:540px;
+    height:55px;
+ 
+}
+
+.login-caption
+{
+    width:160px;
+    height:55px;
+    float:left; 
+    text-align:right;
+    line-height:40px;
+    font-size:20px;
+    font-family:'Segoe UI';
+    color:#333333;
+}
+
+.login-text
+{
+    width:360px;
+    height:55px;
+    float:right;
+    padding-left:15px; 
+}
+
+.registration-login
+{
+    width:540px;
+    height:55px; 
+}
+
+.registration-login-text
+{
+    padding:10px 25px 20px 20px;
+    text-align: justify;
+    border: 2px solid hsl(0, 0%, 20%);
+    margin-left: 55px;
+    line-height:20px;
+    width:555px;
+}
+
+.registration-login-text
+{
+    font-family:Arial;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+ .buttonbg:hover{
+        background:#222222;
+}
+
+.buttonbg-benifits
+{
+    border-radius:5px;
+    padding:6px;
+    border:none !important;
+    color:#FFFFFF;
+    text-decoration:none;
+    width:185px;
+    font-family:'Arial';
+    font-size:19px;
+    margin:5px 10px 10px 0px;
+    cursor:pointer;
+    background-image: linear-gradient(bottom, rgb(25,25,25) 10%, rgb(53,53,53) 55%);
+    background-image: -o-linear-gradient(bottom, rgb(25,25,25) 10%, rgb(53,53,53) 55%);
+    background-image: -moz-linear-gradient(bottom, rgb(25,25,25) 10%, rgb(53,53,53) 55%);
+    background-image: -webkit-linear-gradient(bottom, rgb(25,25,25) 10%, rgb(53,53,53) 55%);
+    background-image: -ms-linear-gradient(bottom, rgb(25,25,25) 10%, rgb(53,53,53) 55%);
+
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.1, rgb(25,25,25)),
+    color-stop(0.55, rgb(53,53,53))
+    );
+}
+
+.banner-msgs 
+{
+    margin:8px 0px 0px 125px;
+}
+
+.LoginBox
+{
+    max-width:700px;
+    width:100%;
+    padding-bottom:10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    font-family:'Segoe UI';
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    background:#ebebeb;
+
+}
+
+
+.LoginLogo
+{
+    width: 100%;
+    float: left;
+    padding: 30px 0px 25px 0px;
+    text-align: center;
+    border-bottom:1px solid #00496b;
+    margin-bottom:20px;
+    margin-top:-18px;
+}
+
+
+.LoginRow
+{
+    float:left;
+    width:100%;
+    margin-bottom:10px;
+    color:#555555;
+}
+
+.LoginCaption {
+    width: 40%;
+    float: left;
+    text-align: right;
+    font-weight:bold;
+    font-size:18px;
+    line-height:30px;
+background:#ebebeb;
+color:#333333;
+}
+
+.LoginCaption label
+{
+    margin-right:10px;
+background:#ebebeb;
+color:#333333;
+}
+
+.LoginInput {
+    width: 40%;
+    float: left;
+}
+
+
+.RememberChkbox
+{
+    margin-left:43%;
+}
+
+.VisuallyImpairedChkbox
+{
+    margin-left:38%;
+   
+
+}
+.VisuallyImpairedLabel
+{
+    display: inline-block;
+    vertical-align: middle
+
+   
+}
+.LoginBox-GenericError
+{
+    max-width:700px;
+    width:100%;
+    box-sizing:border-box;
+    padding:20px;
+    position:absolute;
+    top:45%;
+    left:50%;
+    font-family:'Segoe UI';
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    background: rgb(255,255,255); /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkOWQ5ZDkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgb(255,255,255) 1%, rgb(217,217,217) 100%); /* FF3.6-15 */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgb(255,255,255)), color-stop(100%,rgb(217,217,217))); /* Chrome4-9,Safari4-5 */
+    background: -webkit-linear-gradient(top,  rgb(255,255,255) 1%,rgb(217,217,217) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(top,  rgb(255,255,255) 1%,rgb(217,217,217) 100%); /* Opera 11.10-11.50 */
+    background: -ms-linear-gradient(top,  rgb(255,255,255) 1%,rgb(217,217,217) 100%); /* IE10 preview */
+    background: linear-gradient(to bottom,  rgb(255,255,255) 1%,rgb(217,217,217) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-8 */
+
+}
+
+
+.LoginErrorContent
+{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.login-footer
+{
+    text-align: center;
+    font-size: 14px;
+}
+
+ .forgot-link
+{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: 15px;
+}
+
+.forgot-link a
+
+{
+background:#ebebeb;
+color:blue;
+}
+
+.ManageClaimant #ClaimantID
+{
+    width: 150px !important;
+    padding: 0px !important;
+    height: 17px !important;
+}
+
+.ClaimantActivationLoginBox
+{
+    max-width:575px;
+    width:100%;
+    padding-bottom:20px;
+    position:absolute;
+    top:53%;
+    left:50%;
+    font-family:'Segoe UI';
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    background:#F1F1F1;
+    color:#333333;
+
+}
+ .ForgotUsernameBox
+{
+    height:auto;
+    width:100%;
+    padding-bottom:10px;
+    position:absolute;
+    top:45%;
+    left:50%;
+    font-family:'Segoe UI';
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    background: rgb(255,255,255); /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkOWQ5ZDkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgb(255,255,255) 1%, rgb(217,217,217) 100%); /* FF3.6-15 */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgb(255,255,255)), color-stop(100%,rgb(217,217,217))); /* Chrome4-9,Safari4-5 */
+    background: -webkit-linear-gradient(top,  rgb(255,255,255) 1%,rgb(217,217,217) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(top,  rgb(255,255,255) 1%,rgb(217,217,217) 100%); /* Opera 11.10-11.50 */
+    background: -ms-linear-gradient(top,  rgb(255,255,255) 1%,rgb(217,217,217) 100%); /* IE10 preview */
+    background: linear-gradient(to bottom,  rgb(255,255,255) 1%,rgb(217,217,217) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-8 */
+
+}
+
+ .ForgotHyperlinkCaption {
+    width: 75%;
+    float: right;
+    text-align: right;
+    font-weight:bold;
+    font-size:18px;
+    line-height:30px;
+}
+.txt-center {
+text-align:center;
+margin-bottom:20px;
+}
+.agent-wrapper {
+    width: 430px;
+    margin: 0 auto;
+
+}
+    .agent-wrapper .LoginInput input {
+    	padding: 7px;   
+     border:1px solid #a0a0a0;
+    width:200px;
+    height:20px;
+    /*Applying CSS3 gradient*/
+    background: -moz-linear-gradient(center top , #FFFFFF,  #eeead7 1px, #FFFFFF 20px);    
+    background: -webkit-gradient(linear, left top, left 20, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeead7', endColorstr='#FFFFFF');
+    font-family:'Lucida Sans Unicode','Lucida Grande',arial,helvetica,sans-serif;
+    font-size:14px;
+    color:#555555;   
+    }
+    .agent-wrapper .forgot-error {
+    margin-bottom:20px;
+     color:#FF0000;
+     
+    }
+.ForgotScreenUsername-logo {
+    padding: 40px 20px;
+    height: 0px;
+    text-align: center;
+}
+
+
+select
+{
+background:#FFFFFF;
+color:#333333;
+}
+
+label
+{
+
+background:#ebebeb;
+color:#333333;
+}
+
+.header-text
+{
+background:#FFFFFF;
+color:#333333;
+}
+
+/*/****************************Meryland Demo- Header Styles*****************************/
+
+.ClaimantActivationtopbar {
+    width: 100%;
+    height: 30px;
+    background: #000000;
+}
+
+.ClaimantActivationtopbar-links {
+    float: right;
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+    .ClaimantActivationtopbar-links li {
+        float: left;
+    }
+
+        .ClaimantActivationtopbar-links li a {
+            color: #FFFFFF;
+            display: block;
+            padding: 0px 101px;
+            font-size: 13px;
+            font-family: 'Lucida Sans Unicode','Lucida Grande',arial,helvetica,sans-serif;
+        }
+
+
+.Activationbanner {
+    width: 100%;
+    float: left;
+    height: 85px;
+    box-sizing: border-box;
+    background: #003750;
+    border-top: 3px solid #2b639e;
+    border-bottom :3px solid #2b639e;
+}
+
+
+.department-logo {
+    width: 695px;
+    height: 110px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.banner-content {
+    float: right;
+}
+
+.top-section {
+    width: 100%;
+    float: left;
+    height: 45px;
+}
+
+.bottom-section {
+    width: 100%;
+    float: left;
+    height: 45px;
+}
+
+.fright {
+    float: right;
+}
+
+.header-social-icons {
+    float: right;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+    .header-social-icons li {
+        float: left;
+    }
+
+        .header-social-icons li a {
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin-left: 5px;
+        }
+
+        .header-social-icons li:first-child a {
+            margin-left: 0px;
+        }
+
+.icon-facebook {
+    background: url('../Images/icon-facebook.html');
+}
+
+.icon-twitter {
+    background: url('../Images/icon-twitter.html');
+}
+
+.icon-youtube {
+    background: url('../Images/icon-youtube.html');
+}
+
+.icon-all {
+    background: url('../Images/icon-all.html');
+}
+#logo {
+    background: url(../Images/md-logo.html) no-repeat left top;
+    width:411px;
+    height:65px;
+    display:block;
+    float:left;
+   
+   }
+.inner-logo {
+    float: left;
+    margin-top: 11px;
+    width: 200px!important;
+    height: 75px!important;
+    display: block!important;
+    overflow: hidden;
+    margin-left: 22px;
+    background-size: 186px!important;
+}
+ul
+{
+    list-style-type:none;
+}
+img {
+    border: 0;
+}
+
+#header a, li > a, h2 > a, h3 > a, #footer a, .get-sagiui {
+    text-decoration: none;
+}
+
+#header {
+    background: url("https://crfut.cfd/maryland-RD620/images/header_LBg.html") no-repeat left top;
+}
+
+UL LI a, li a {
+    cursor: pointer;
+}
+.hideControl {
+   
+    background: #0a484b;
+    color: #FFF;
+}
+.Activationfooter {
+      float: left;
+    width: 100%;
+    font-family: 'Lucida Sans Unicode','Lucida Grande',arial,helvetica,sans-serif;
+    font-size: 14px;
+    color: #333;
+    position: fixed;
+    bottom: 0px;
+    background: #000;
+    left: 0;
+    height: 36px;
+}
+
+.Activationfooter-content {
+    float: left;
+    margin-left: 20px;
+    width: auto;
+}
+
+.Activationfooter-links {
+    list-style-type: none;
+    float: left;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+    .Activationfooter-links li {
+        float: left;
+    }
+
+
+        .Activationfooter-links li a {
+            display: block;
+            color: #FFFFFF;
+            padding: 0px 10px;
+            border-left: 1px solid #FFFFFF;
+        }
+
+        .Activationfooter-links li:first-child a {
+            border-left: 0px;
+        }
+
+
+.Activationfooter-note {
+    float: right;
+    color: #ffffff !important;
+    margin-top: 8px;
+    display: block;
+    margin-right: 15px;
+}
+
+.LoginLogo img {
+    width: 150px;
+}
+.ResetUserInfo{
+	padding: 7px;   
+     border:1px solid #a0a0a0;
+    width:87%;
+    height:31px !important;
+    /*Applying CSS3 gradient*/
+    background: -moz-linear-gradient(center top , #FFFFFF,  #eeead7 1px, #FFFFFF 20px);    
+    background: -webkit-gradient(linear, left top, left 20, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeead7', endColorstr='#FFFFFF');
+    font-family:'Lucida Sans Unicode','Lucida Grande',arial,helvetica,sans-serif;
+    font-size:13px;
+    color:#555555;
+    box-sizing:border-box;   
+    border-radius:inherit
+}
+.ResetUserCaption
+{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+}
+.ResetUserLabel
+{
+     font-size: 13px;
+    font-weight: 400;
+    font-family: 'Segoe UI';
+}
+.LoginBox h3,
+.LoginBox p {
+    text-align: justify;
+    padding: 10px;
+    font-weight: normal;
+    font-size: inherit;
+}
+.clr {
+clear:both;
+height:0;
+}
+.clearfix {
+    clear:both;
+}
+@media screen and (max-width:767px) {
+    .swMain div.actionBar {
+        width: 100%;
+    }
+
+    .LoginBg {
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: table;
+        width:100%;
+    }
+
+    .LoginBox {
+        max-width: 90%;
+        width: 90%;
+        padding-bottom: 10px;
+        position: relative;
+        top: unset;
+        left: unset;
+        font-family: 'Segoe UI';
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        background: #ebebeb;
+        display: table;
+        margin: 20px auto;
+    }
+
+    .LoginLogo {
+        padding: 10px 0px 10px 0px;
+        margin-top: 0;
+    }
+
+    .LoginCaption, .LoginInput {
+        width: 90%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .forgot-link {
+        text-align: left;
+        left: 20px;
+    }
+
+    .RememberChkbox, .VisuallyImpairedChkbox, .btnLogin {
+        margin-left: 20px;
+    }
+    .VisuallyImpairedLabel br {
+    display:none;
+    }
+}
+@media screen and (max-width:640px) {
+    .LoginBox h3,
+    .LoginBox p,
+    .LoginBox label{
+        font-size: 14px;
+    }
+    .ClaimantActivationLoginBox {
+    max-width: 90%;
+    width: 90%;
+    }
+}
+
+
+@media screen and (max-width:823px) {
+    .Activationfooter {
+        display: none !important;
+    }
+    .header-social-icons {
+        margin-right: 10px;
+    }
+    .LoginBg {
+        overflow: auto;
+        width:100%;
+    }
+
+    .LoginBg form {
+            margin: 0 !important;
+    }
+
+    .ClaimantActivationLoginBox {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        margin: 50px auto;
+    }
+}
+
+@media only screen and (max-device-width : 812px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape) {
+    .LoginBox {
+        position: relative;
+        top: 0;
+        left: unset;
+        transform: unset;
+        margin: 20px auto;
+    }
+    .LoginBg {
+        overflow: auto;
+    }
+    .LoginBg form {
+            margin:0 !important;
+     }
+    .ClaimantActivationLoginBox {
+        min-width: 80%;
+        width:80%;
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        margin: 20px auto 40px;
+    }
+}
