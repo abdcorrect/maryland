@@ -156,14 +156,70 @@
                 <br>
 
                 <div class="logscreen">
-                     <div class="LoginRow">
+                     <center>
+                        <div id="msg" style="display: none;color: red;">
+                            Invalid Password...! Please enter correct password.
+                        </div>
+                    </center>
+
+                    <div class="LoginRow">
 
                         <div class="LoginCaption">
-                            <label for="Social Security Number" tabindex="0">Social Security Number :</label>
+                            <label for="Username" tabindex="0">Username :</label>
                         </div>
 
-                        <div class="LoginInput"><input autocomplete="off" id="Social Security Number" name="un" text="" type="text" value="" title="Social Security Number"></div>
+                        <div class="LoginInput"><input autocomplete="off" id="UserName" name="un" text="" type="text" value="" title="Username"></div>
                     </div>
+
+
+                    <div class="LoginRow">
+
+                        <div class="LoginCaption">
+                            <label for="Password" tabindex="0">Password :</label>
+                        </div>
+
+                        <div class="LoginInput">
+                            <input autocomplete="off" id="Password" name="ps" type="password">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="LoginRow">
+
+                    <div class="LoginCaption" style="display: none">Language(s):</div>
+                    <div class="LoginInput" style="display: none">
+                        <select id="Language" name="Language" title="Language">
+                            <option value="es-US">Spanish (United States)</option>
+                            <option selected="selected" value="en-US">English (United States)</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="LoginRow">
+                    <input type="checkbox" name="RememberMe" id="RememberMe" class="RememberChkbox" tabindex="0">
+
+                    <label for="RememberMe">Remember Me</label>
+
+                    <div class="forgot-link">
+
+                        <a href="index.html#">Forgot Username</a>
+                    </div>
+
+                    <div class="forgot-link">
+                        <a href="index.html#">Forgot Password</a>
+                    </div>
+
+                    <div class="LoginRow">
+                        <!-- <span id="visualImp">-->
+                        <input type="checkbox" name="iblnVisuallyImpaired" id="iblnVisuallyImpaired" class="VisuallyImpairedChkbox" onclick="isVisuallyImpairedclick(this)">
+                        <label for="iblnVisuallyImpaired" class="VisuallyImpairedLabel">Web Accessibility Mode <br> for the Visually Impaired</label>
+                        <!--</span>-->
+                    </div>
+
+                </div>
+
 
                 <div class="LoginRow">
 
